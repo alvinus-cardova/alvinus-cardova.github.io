@@ -1,7 +1,7 @@
 ---
-title: "RCPPO"
-excerpt: "Implementation of RCPO into stable-baselines3 PPO. <br/><img src='/images/RCPPO.png'>"
+title: "SENOVTIK"
+excerpt: "Analysis of Public Sentiment on Social Media Twitter Toward Gibran Rakabuming as a 2024 Vice Presidential Candidate. <br/><img src='/images/sentiment_analysis1.png'>"
 collection: portfolio
 ---
 
-In this project I implemented the [Reward Constrained Policy Optimization Paper](https://openreview.net/pdf?id=SkfrvsA9FX) by Tessler et al. into stable-baselines3 implementation of PPO. Additionally, I reproduced the original results by tracking my experiments using weights and biases. The code for this project can be found [here](https://github.com/sudo-Boris/stable-baselines3). I also wrote an article elaborating on the theory of RCPO and my results and submitted it to the ICLR Blogposts Track! You can fin the article [here](https://iclr-blogposts.github.io/staging/blog/2023/Adaptive-Reward-Penalty-in-Safe-Reinforcement-Learning/)
+In this project, I implemented the [Sentiment analysis Paper](https://doi.org/10.54783/jser.v5i2.259) by Widayanti, C., & Fridiyanti, Y. N. (2023) into a stable-baselines3 implementation of PPO. Additionally, I reproduced the original sentiment analysis results by tracking my experiments using SVM(Support Vector Machne) technique. The code for this project can be found [here](https://github.com/v1nusss/sentiment-analysis). I also wrote an article elaborating on the theory of SVM and my results and submitted it to the Senovtik! You can find the article [here](https://drive.google.com/drive/folders/174talMM8H7MdKJ9mxQbsOi6rtalHTuPM?usp=sharing)
