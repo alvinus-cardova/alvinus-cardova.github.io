@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "👋🏼 Hello there, I'm Boris!"
+title: "👋🏼 Hello there, I'm Alvinus!"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,42 +8,49 @@ redirect_from:
   - /about.html
 ---
 
+![Illustration of combining vision and language modalities](/images/tech_image1.png){: .align-right width="300px"}
 
+## 👨🏻‍💻 About Me
 
-![Illustration of combining vision and language modalities](/images/image_to_text_vis.png){: .align-right width="300px"}
-👨🏻‍💻 I'm a final year graduate student at the TU Berlin.
+I am Alvinus, a final-year graduate student at Yogyakarta University of Technology. My academic journey and professional experiences have been deeply rooted in the fascinating intersections of vision and language modalities, as well as advancements in Self-Supervised Learning.
 
-🔬 My research interests are in bridging vision and language modalities and Self-Supervised Learning!
+## 🔬 Research Interests
 
-📚 I'm currently working towards my Master's Thesis in the field of Vision-Language-Modelling.
+My research interests encompass:
+- The integration of vision and language modalities
+- Self-Supervised Learning techniques
+- Development of sophisticated models for news detection
 
-📽️ I am also interested in assisting others on their path in the world of Machine Learning and academia.
+Currently, I am working diligently on my Master's Thesis, focusing on innovative approaches to news detection modeling.
 
-# Selected Experience
+## 📽️ Passion for Mentorship
 
-## 🤖 Open Source Contributions
-I have experience contributing to [Arena Bench](https://github.com/Arena-Rosnav) a large open-source project for robotic obstacle avoidance using Deep Reinforcement Learning.
+Beyond my academic pursuits, I am passionate about mentoring and guiding others through the dynamic fields of Machine Learning and academia.
 
-Moreover, I have published a [respective paper](https://sudo-boris.github.io/publication/2022-Arena-Bench) at the IROS conference and in the Robotics and Automation Letters (RA-L) journal.
+## 🏆 Selected Experience
 
-## 📜 Reimplementing and Reproducing Papers
-I have experience with independent research. I have implemented the Reward Constrained Policy Optimization paper into stable-baselines3 PPO and reproduced the original results by running and tracking experiments.
+### 🤖 Open Source Contributions
 
-To accompany this work, I have submitted a blog post to the **ICLR** Blogposts Track communicating the paper's theory and my results.
+I have made significant contributions to the [Senovtik Seminar](https://sinovik.menpan.go.id/), an extensive open-source project dedicated to Social Media Twitter Sentiment Analysis concerning Gibran Rakabuming's candidacy for Vice President in 2024.
 
-Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/portfolio/RCPPO/).
+Additionally, I have authored a [related paper](https://v1nusss.github.io/alvinus-cardova.github.io/publications/) presented at the National Seminar on Information & Communication Technology Innovation (SENOVTIK) 2023.
 
-## 👨🏻‍🔬 Professional Experience
-Currently I am working as a **Student Researcher** at the Reliable Multimodal AI Lab at the TU Darmstadt under the supervision of Prof. Marcus Rohrbach working on **Generative Video-Language Modelling**.
-Additionally, I have professional experience working as an **Applied Machine Learning Student Researcher** at the Fraunhofer Heinrich Hertz Institute. \
-There I worked on dynamic traffic flow forecasting using Graph Neural Networks.
+### 📜 Reimplementing and Reproducing Papers
 
-## 📚 Teaching and Community Contributions
-To further contribute to the Machine Learning community, I have a [YouTube](https://www.youtube.com/@borismeinardus) and [Medium](https://medium.com/@boris.meinardus) channel where I publish educational Machine Learning content.
+My independent research endeavors include:
+- Implementing the Information Technology and Computer Science paper from Universitas Muhammadiyah Riau
+- Successfully reproducing the original results by accurately detecting fake news
 
+To disseminate my findings, I have submitted papers to **FASILKOM** journals, elucidating the theoretical framework and empirical results of my research. For further details, please review my specific [portfolio entry](https://v1nusss.github.io/alvinus-cardova.github.io/portfolio/).
 
+### 👨🏻‍🔬 Professional Experience
 
+As a final-year student, I am concurrently working as a freelance data scientist on Upwork, specializing in **Machine Learning**. I possess substantial experience managing large-scale projects, including:
 
+- Leveraging **YOLOv8** for real-time object detection
+- Employing **EasyOCR** for text recognition on isolated license plate images
+- Utilizing **Streamlit** as a web application development framework
 
+### 📚 Teaching and Community Contributions
 
-
+To further enrich the Machine Learning community, I maintain a [YouTube channel](https://www.youtube.com/@alvinuscardova9407) where I publish advanced educational content on Machine L
