@@ -10,7 +10,7 @@ redirect_from:
 
 
 
-![Illustration](images/tech_image1.png){: .align-right width="500px"}
+![Illustration](images/tech_image1.png){: .align-right width="350px"}
 
 ## 👨🏻‍💻 About Me
 
