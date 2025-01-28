@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-(/images/tech_image1.png){: .align-right width="300px"}
+![Illustration](/images/tech_image1.png){: .align-right width="300px"}
 
 ## 👨🏻‍💻 About Me
 
