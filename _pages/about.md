@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-![Illustration of combining vision and language modalities](/images/tech_image1.png){: .align-right width="300px"}
+![Illustration of combining vision and language modalities](/images/tech_image1.png)
 
 ## 👨🏻‍💻 About Me
 
