@@ -10,7 +10,10 @@ redirect_from:
 
 
 
-![Illustration](/images/tech_image1.png){: .align-right width="300px"}
+![Illustration](images/tech_image1.png){: .align-right width="300px"}
+
+## 👨🏻‍💻 About Me
+
 I am Alvinus, a final-year graduate student at Yogyakarta University of Technology. My academic journey and professional experiences have been deeply rooted in the fascinating intersections of vision and language modalities, as well as advancements in Self-Supervised Learning.
 
 ## 🔬 Research Interests
