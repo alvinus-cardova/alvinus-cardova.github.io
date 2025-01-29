@@ -1,11 +1,8 @@
 ---
 title: "User-and-Market-Insights"
-excerpt: "Comprehensive Analysis of User Purchasing Behavior and Market Trends."
+excerpt: "Comprehensive Analysis of User Purchasing Behavior and Market Trends. <br/><img src='../images/user_market_insights.png'>"
 collection: portfolio
 ---
-
-<img src="{{ site.baseurl }}images/user_market_insights.png" alt="User and Market Insights Dashboard" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-![Illustration1](/images/user_market_insights.png){: .align-right width="350px"}
 
 <p>Comprehensive Analysis of User Purchasing Behavior and Market Trends.</p>
 
