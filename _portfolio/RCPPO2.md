@@ -1,9 +1,12 @@
 ---
+permalink: /
 title: "User-and-Market-Insights"
 excerpt: "Comprehensive Analysis of User Purchasing Behavior and Market Trends. <br/><img src='../images/user_market_insights.png'>"
+author_profile: true
 collection: portfolio
 ---
 
+![Illustration](images/user_market_insights.png){: .align-right width="350px"}
 <p>Comprehensive Analysis of User Purchasing Behavior and Market Trends.</p>
 
 <p>
