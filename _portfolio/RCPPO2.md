@@ -1,5 +1,4 @@
 ---
-permalink: /
 title: "User-and-Market-Insights"
 excerpt: "Comprehensive Analysis of User Purchasing Behavior and Market Trends."
 author_profile: true
