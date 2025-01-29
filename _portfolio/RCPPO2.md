@@ -1,11 +1,9 @@
 ---
 title: "User-and-Market-Insights"
-excerpt: "Comprehensive Analysis of User Purchasing Behavior and Market Trends."
-author_profile: true
+excerpt: "Comprehensive Analysis of User Purchasing Behavior and Market Trends. <br/><img src='../images/RCPPO.png'>"
 collection: portfolio
 ---
 
-![Illustration](images/user_market_insights.png){: .align-right width="400px"}
 <p>Comprehensive Analysis of User Purchasing Behavior and Market Trends.</p>
 
 <p>
