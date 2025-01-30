@@ -12,18 +12,18 @@ redirect_from:
 
 ## 👨🏻‍💻 About Me
 
-<p style="text-align: justify;">
-I am Alvinus, a final-year graduate student at Yogyakarta University of Technology. My academic journey and professional experiences have been deeply rooted in the fascinating intersections of vision and language modalities, as well as advancements in Self-Supervised Learning.
-</p>
+<p style="text-align: justify;"> I am Alvinus, a passionate Data Scientist and final-year graduate student at Yogyakarta University of Technology. With a strong foundation in data analysis and machine learning, I specialize in transforming complex data into actionable insights. My academic journey has equipped me with expertise in statistical analysis, predictive modeling, and data visualization, while my professional experiences have allowed me to apply these skills to real-world challenges. </p>
 
-## 🔬 Research Interests
+## 📊 Data Science Interests
 
-My research interests encompass:
-- The integration of vision and language modalities
-- Self-Supervised Learning techniques
-- Development of sophisticated models for news detection
+My professional interests focus on:
+- Data Analytics and Business Intelligence
+- Machine Learning and Predictive Modeling
+- Big Data Processing and Analysis
+- Data Visualization and Storytelling
+- Statistical Analysis and Pattern Recognition
 
-Currently, I am working diligently on my Master's Thesis, focusing on innovative approaches to news detection modeling.
+Currently preparing for graduation, I'm focusing on expanding my expertise in data science roles while seeking opportunities to solve real-world business challenges through data-driven approaches.
 
 ## 📽️ Passion for Mentorship
 
@@ -35,7 +35,7 @@ Beyond my academic pursuits, I am passionate about mentoring and guiding others 
 
 I have made significant contributions to the [Senovtik Seminar](https://sinovik.menpan.go.id/), an extensive open-source project dedicated to Social Media Twitter Sentiment Analysis concerning Gibran Rakabuming's candidacy for Vice President in 2024.
 
-Additionally, I have authored a [related paper](https://v1nusss.github.io/alvinus-cardova.github.io/publications/) presented at the National Seminar on Information & Communication Technology Innovation (SENOVTIK) 2023.
+Additionally, I have authored a [related paper](https://drive.google.com/file/d/1dFgNc9gLEWAO9QVBDz26B3bQ3H89vXPQ/view?usp=sharing) presented at the National Seminar on Information & Communication Technology Innovation (SENOVTIK) 2023.
 
 ### 📜 Reimplementing and Reproducing Papers
 
@@ -43,7 +43,7 @@ My independent research endeavors include:
 - Implementing the Information Technology and Computer Science paper from Universitas Muhammadiyah Riau
 - Successfully reproducing the original results by accurately detecting fake news
 
-To disseminate my findings, I have submitted papers to **FASILKOM** journals, elucidating the theoretical framework and empirical results of my research. For further details, please review my specific [portfolio entry](https://v1nusss.github.io/alvinus-cardova.github.io/portfolio/).
+To disseminate my findings, I have submitted papers to **FASILKOM** journals, elucidating the theoretical framework and empirical results of my research. For further details, please review my specific [portfolio entry](https://ejurnal.umri.ac.id/index.php/JIK/article/view/6175).
 
 ### 👨🏻‍💼 Professional Experience
 
