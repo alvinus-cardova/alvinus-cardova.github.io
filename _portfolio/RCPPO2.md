@@ -1,6 +1,6 @@
 ---
 title: "User-and-Market-Insights"
-excerpt: "Comprehensive Analysis of User Purchasing Behavior and Market Trends. <br/><img src='../images/user_market_insights.png'>"
+excerpt: "Comprehensive Analysis of User Purchasing Behavior and Market Trends. <br/><img src='../images/user_market_insights.png' width='500px'>"
 collection: portfolio
 ---
 
