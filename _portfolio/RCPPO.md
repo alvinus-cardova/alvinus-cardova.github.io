@@ -1,6 +1,6 @@
 ---
 title: "SENOVTIK"
-excerpt: "Analysis of Public Sentiment on Social Media Twitter Toward Gibran Rakabuming as a 2024 Vice Presidential Candidate. <br/><img src='../images/tech_image1.png' width='500px'>"
+excerpt: "Analysis of Public Sentiment on Social Media Twitter Toward Gibran Rakabuming as a 2024 Vice Presidential Candidate. <br/><img src='../images/sentiment_analysis1.png' width='500px'>"
 collection: portfolio
 ---
 
