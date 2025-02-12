@@ -65,8 +65,12 @@ To disseminate my findings, I have submitted papers to **FASILKOM** journals, el
 - Employed **EasyOCR** for text recognition on isolated license plate images.  
 - Utilized **Streamlit** as a web application development framework.  
 
-
 ### 📚 Teaching and Community Contributions
 
 To further enrich the Machine Learning community, I maintain a [YouTube channel](https://www.youtube.com/@alvinuscardova9407) where I publish advanced educational content on Machine Learning.
 
+---
+
+<!-- Chatbot Integration -->
+<script> window.chtlConfig = { chatbotId: "4169721431" } </script>
+<script async data-id="4169721431" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
