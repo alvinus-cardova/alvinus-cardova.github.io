@@ -19,7 +19,7 @@ redirect_from:
   <iframe
     src="https://www.chatbase.co/chatbot-iframe/ZNPQ0CgXhiHlbhNsjeUOp"
     width="100%"
-    style="height: 700px; border: none;"
+    style="height: 300px; border: none;"
     frameborder="0"
   ></iframe>
 </div>
