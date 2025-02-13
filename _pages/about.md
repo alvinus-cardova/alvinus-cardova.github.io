@@ -14,16 +14,6 @@ redirect_from:
 
 <p style="text-align: justify;"> I am Alvinus, a passionate Data Scientist and final-year graduate student at Yogyakarta University of Technology. With a strong foundation in data analysis and machine learning, I specialize in transforming complex data into actionable insights. My academic journey has equipped me with expertise in statistical analysis, predictive modeling, and data visualization, while my professional experiences have allowed me to apply these skills to real-world challenges. </p>
 
-<!-- Chatbot iframe placed directly below "About Me" -->
-<div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 20px;">
-  <iframe
-    src="https://www.chatbase.co/chatbot-iframe/ZNPQ0CgXhiHlbhNsjeUOp"
-    width="100%"
-    style="height: 500px; border: none;"
-    frameborder="0"
-  ></iframe>
-</div>
-
 ## 📊 Data Science Interests
 
 My professional interests focus on:
@@ -78,3 +68,9 @@ To disseminate my findings, I have submitted papers to **FASILKOM** journals, el
 ### 📚 Teaching and Community Contributions
 
 To further enrich the Machine Learning community, I maintain a [YouTube channel](https://www.youtube.com/@alvinuscardova9407) where I publish advanced educational content on Machine Learning.
+
+---
+
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="ZNPQ0CgXhiHlbhNsjeUOp";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
