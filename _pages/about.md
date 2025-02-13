@@ -8,14 +8,21 @@ redirect_from:
   - /about.html
 ---
 
-<div style="display: flex; gap: 20px; align-items: flex-start;">
-  <div style="flex: 2;">
-
 ![Illustration](images/tech_image1.png){: .align-right width="350px"}
 
 ## 👨🏻‍💻 About Me
 
 <p style="text-align: justify;"> I am Alvinus, a passionate Data Scientist and final-year graduate student at Yogyakarta University of Technology. With a strong foundation in data analysis and machine learning, I specialize in transforming complex data into actionable insights. My academic journey has equipped me with expertise in statistical analysis, predictive modeling, and data visualization, while my professional experiences have allowed me to apply these skills to real-world challenges. </p>
+
+<!-- Chatbot iframe placed directly below "About Me" -->
+<div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 20px;">
+  <iframe
+    src="https://www.chatbase.co/chatbot-iframe/ZNPQ0CgXhiHlbhNsjeUOp"
+    width="100%"
+    style="height: 700px; border: none;"
+    frameborder="0"
+  ></iframe>
+</div>
 
 ## 📊 Data Science Interests
 
@@ -71,15 +78,3 @@ To disseminate my findings, I have submitted papers to **FASILKOM** journals, el
 ### 📚 Teaching and Community Contributions
 
 To further enrich the Machine Learning community, I maintain a [YouTube channel](https://www.youtube.com/@alvinuscardova9407) where I publish advanced educational content on Machine Learning.
-
-  </div>
-
-  <div style="flex: 1; min-width: 350px;">
-    <iframe
-      src="https://www.chatbase.co/chatbot-iframe/ZNPQ0CgXhiHlbhNsjeUOp"
-      width="100%"
-      style="height: 100%; min-height: 700px; border: none;"
-      frameborder="0"
-    ></iframe>
-  </div>
-</div>
