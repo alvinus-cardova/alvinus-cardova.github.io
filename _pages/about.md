@@ -8,6 +8,9 @@ redirect_from:
   - /about.html
 ---
 
+<div style="display: flex; gap: 20px; align-items: flex-start;">
+  <div style="flex: 2;">
+
 ![Illustration](images/tech_image1.png){: .align-right width="350px"}
 
 ## 👨🏻‍💻 About Me
@@ -69,8 +72,14 @@ To disseminate my findings, I have submitted papers to **FASILKOM** journals, el
 
 To further enrich the Machine Learning community, I maintain a [YouTube channel](https://www.youtube.com/@alvinuscardova9407) where I publish advanced educational content on Machine Learning.
 
----
+  </div>
 
-<!-- Chatbot Integration -->
-<script> window.chtlConfig = { chatbotId: "4169721431" } </script>
-<script async data-id="4169721431" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+  <div style="flex: 1; min-width: 350px;">
+    <iframe
+      src="https://www.chatbase.co/chatbot-iframe/ZNPQ0CgXhiHlbhNsjeUOp"
+      width="100%"
+      style="height: 100%; min-height: 700px; border: none;"
+      frameborder="0"
+    ></iframe>
+  </div>
+</div>
