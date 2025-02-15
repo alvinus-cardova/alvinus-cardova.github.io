@@ -11,9 +11,9 @@ title: "Alvinus's Homepage"
 title_separator: "-"
 name: &name "Alvinus Cardova"
 description: &description "personal description"
-url: https://sudo-vinus.github.io
+url: https://alvcrdv.github.io
 baseurl: "" 
-repository: "sudo-Vinus/sudo-Vinus.github.io"
+repository: "alvcrdv/alvcrdv.github.io"
 teaser:  
 breadcrumbs: false
 words_per_minute: 160
@@ -50,7 +50,7 @@ author:
   email: "alvinuscardova16@gmail.com"
   googlescholar: "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   pubmed: "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  github: "sudo-Vinus"
+  github: "alvcrdv"
   instagram: "vinussscrdv"
   linkedin: "alvinuscardova"
   youtube: "alvinuscardova9407"
