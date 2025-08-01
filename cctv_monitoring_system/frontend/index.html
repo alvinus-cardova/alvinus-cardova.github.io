@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCTV PPE Monitoring System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <h1>CCTV PPE Monitoring System</h1>
+                </div>
+                <div class="header-controls">
+                    <div class="status-indicator">
+                        <span class="status-dot" id="connection-status"></span>
+                        <span id="status-text">Connecting...</span>
+                    </div>
+                    <div class="time-display" id="current-time"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Left Sidebar - Statistics -->
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-chart-bar"></i> Live Statistics</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card" id="no-helmet-stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-hard-hat"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number" id="no-helmet-count">0</div>
+                                <div class="stat-label">No Helmet</div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card" id="no-vest-stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-tshirt"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number" id="no-vest-count">0</div>
+                                <div class="stat-label">No Vest</div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card emergency" id="fall-stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number" id="fall-count">0</div>
+                                <div class="stat-label">Fall Detected</div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card emergency" id="fire-stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number" id="fire-count">0</div>
+                                <div class="stat-label">Fire</div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card emergency" id="smoke-stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-smog"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number" id="smoke-count">0</div>
+                                <div class="stat-label">Smoke</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-cog"></i> Camera Controls</h3>
+                    <div class="camera-controls">
+                        <button class="control-btn" onclick="controlCamera('home')">
+                            <i class="fas fa-home"></i> Home
+                        </button>
+                        <button class="control-btn" onclick="controlCamera('pan', 0.1)">
+                            <i class="fas fa-arrow-right"></i> Pan Right
+                        </button>
+                        <button class="control-btn" onclick="controlCamera('pan', -0.1)">
+                            <i class="fas fa-arrow-left"></i> Pan Left
+                        </button>
+                        <button class="control-btn" onclick="controlCamera('tilt', 0.1)">
+                            <i class="fas fa-arrow-up"></i> Tilt Up
+                        </button>
+                        <button class="control-btn" onclick="controlCamera('tilt', -0.1)">
+                            <i class="fas fa-arrow-down"></i> Tilt Down
+                        </button>
+                        <button class="control-btn" onclick="controlCamera('zoom', 1.2)">
+                            <i class="fas fa-search-plus"></i> Zoom In
+                        </button>
+                        <button class="control-btn" onclick="controlCamera('zoom', 0.8)">
+                            <i class="fas fa-search-minus"></i> Zoom Out
+                        </button>
+                        <button class="control-btn" onclick="controlCamera('stop')">
+                            <i class="fas fa-stop"></i> Stop
+                        </button>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-bell"></i> Notifications</h3>
+                    <div class="notification-settings">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="sound-alerts" checked>
+                            <span class="checkmark"></span>
+                            Sound Alerts
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="email-notifications" checked>
+                            <span class="checkmark"></span>
+                            Email Notifications
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="whatsapp-notifications" checked>
+                            <span class="checkmark"></span>
+                            WhatsApp Alerts
+                        </label>
+                    </div>
+                    <button class="test-btn" onclick="testNotification()">
+                        <i class="fas fa-bell"></i> Test Alert
+                    </button>
+                </div>
+            </aside>
+
+            <!-- Main Video Area -->
+            <main class="video-area">
+                <div class="video-container">
+                    <div class="video-header">
+                        <h2><i class="fas fa-video"></i> Live Monitoring</h2>
+                        <div class="video-controls">
+                            <button class="video-btn" onclick="toggleFullscreen()">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                            <button class="video-btn" onclick="captureSnapshot()">
+                                <i class="fas fa-camera"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="video-feed" id="video-feed">
+                        <div class="video-placeholder">
+                            <i class="fas fa-video-slash"></i>
+                            <p>Connecting to camera...</p>
+                        </div>
+                        <canvas id="detection-canvas" class="detection-overlay"></canvas>
+                    </div>
+                    
+                    <div class="detection-info">
+                        <div class="detection-status">
+                            <span class="status-indicator">
+                                <i class="fas fa-circle"></i>
+                                Detection Active
+                            </span>
+                        </div>
+                        <div class="detection-stats">
+                            <span>FPS: <span id="fps-counter">0</span></span>
+                            <span>Objects: <span id="object-counter">0</span></span>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Right Sidebar - Alerts & Reports -->
+            <aside class="alerts-sidebar">
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Recent Alerts</h3>
+                    <div class="alerts-container" id="alerts-container">
+                        <div class="no-alerts">
+                            <i class="fas fa-check-circle"></i>
+                            <p>No recent alerts</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-file-alt"></i> Reports</h3>
+                    <div class="reports-controls">
+                        <button class="report-btn" onclick="generateReport('daily')">
+                            <i class="fas fa-calendar-day"></i> Daily Report
+                        </button>
+                        <button class="report-btn" onclick="generateReport('weekly')">
+                            <i class="fas fa-calendar-week"></i> Weekly Report
+                        </button>
+                        <button class="report-btn" onclick="generateReport('monthly')">
+                            <i class="fas fa-calendar-alt"></i> Monthly Report
+                        </button>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-map-marked-alt"></i> Heatmap</h3>
+                    <div class="heatmap-container">
+                        <div class="heatmap-placeholder">
+                            <i class="fas fa-map"></i>
+                            <p>Violation heatmap will appear here</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Emergency Alert Modal -->
+        <div class="modal" id="emergency-modal">
+            <div class="modal-content emergency">
+                <div class="modal-header">
+                    <h2 id="emergency-title">Emergency Alert</h2>
+                    <button class="modal-close" onclick="closeEmergencyModal()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="emergency-icon">
+                        <i id="emergency-icon" class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="emergency-details">
+                        <p id="emergency-message">An emergency has been detected!</p>
+                        <div class="emergency-location">
+                            <strong>Location:</strong> <span id="emergency-location">Unknown</span>
+                        </div>
+                        <div class="emergency-time">
+                            <strong>Time:</strong> <span id="emergency-time">Now</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-primary" onclick="acknowledgeEmergency()">
+                        <i class="fas fa-check"></i> Acknowledge
+                    </button>
+                    <button class="btn-secondary" onclick="closeEmergencyModal()">
+                        <i class="fas fa-times"></i> Close
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings Modal -->
+        <div class="modal" id="settings-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>System Settings</h2>
+                    <button class="modal-close" onclick="closeSettingsModal()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="settings-section">
+                        <h3>Camera Settings</h3>
+                        <div class="setting-item">
+                            <label>Camera IP:</label>
+                            <input type="text" id="camera-ip" value="10.3.8.111">
+                        </div>
+                        <div class="setting-item">
+                            <label>Username:</label>
+                            <input type="text" id="camera-username" value="admin">
+                        </div>
+                        <div class="setting-item">
+                            <label>Password:</label>
+                            <input type="password" id="camera-password" value="WOWO@2000">
+                        </div>
+                    </div>
+                    
+                    <div class="settings-section">
+                        <h3>Notification Settings</h3>
+                        <div class="setting-item">
+                            <label>Email:</label>
+                            <input type="email" id="notification-email" placeholder="admin@company.com">
+                        </div>
+                        <div class="setting-item">
+                            <label>WhatsApp Number:</label>
+                            <input type="tel" id="whatsapp-number" placeholder="+1234567890">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-primary" onclick="saveSettings()">
+                        <i class="fas fa-save"></i> Save Settings
+                    </button>
+                    <button class="btn-secondary" onclick="closeSettingsModal()">
+                        <i class="fas fa-times"></i> Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio elements for alerts -->
+    <audio id="medical-siren" preload="auto">
+        <source src="assets/sounds/medical_siren.wav" type="audio/wav">
+    </audio>
+    <audio id="evacuation-alarm" preload="auto">
+        <source src="assets/sounds/evacuation_alarm.wav" type="audio/wav">
+    </audio>
+    <audio id="light-warning" preload="auto">
+        <source src="assets/sounds/light_warning.wav" type="audio/wav">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
