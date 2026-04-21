@@ -1,78 +1,126 @@
 ---
 permalink: /
-title: "Hello there, I'm Alvinus."
-excerpt: "AI Engineer building production-ready AI systems"
-author_profile: true
+excerpt: "AI Engineer portfolio: production-ready LLM, RAG, and computer vision systems"
+author_profile: false
 redirect_from:
   - /about/
   - /about.html
 ---
 
-![Illustration](images/tech_image1.png){: .align-right width="350px"}
+<div class="portfolio-home">
+  <section class="portfolio-hero">
+    <div class="portfolio-hero__content">
+      <p class="portfolio-eyebrow">AI Engineer Portfolio</p>
+      <h1>Building Production-Ready AI Systems That Solve Real Problems</h1>
+      <p>
+        I am Alvinus Cardova, an AI Engineer focused on LLM applications, RAG architecture,
+        and computer vision pipelines. I build end-to-end AI solutions from data and model
+        experimentation to deployment, monitoring, and continuous improvement.
+      </p>
+      <div class="portfolio-actions">
+        <a class="btn" href="/files/CV_Alvinus%20Cardova.pdf">Download CV</a>
+        <a class="btn btn--inverse" href="https://github.com/alvinus-cardova">GitHub</a>
+        <a class="btn btn--inverse" href="mailto:alvinuscardova16@gmail.com">Contact</a>
+      </div>
+      <div class="portfolio-stats">
+        <div class="portfolio-stat"><span>Primary Focus</span><strong>LLM + Agentic AI</strong></div>
+        <div class="portfolio-stat"><span>Production Focus</span><strong>API + MLOps</strong></div>
+        <div class="portfolio-stat"><span>Secondary Focus</span><strong>Computer Vision</strong></div>
+      </div>
+    </div>
+    <div class="portfolio-hero__media">
+      <img src="{{ '/images/tech_image1.png' | relative_url }}" alt="AI engineering illustration">
+    </div>
+  </section>
 
-## About Me
+  <section class="portfolio-section">
+    <h2>About Me</h2>
+    <p>
+      I combine software engineering discipline with machine learning experimentation to deliver AI features that are useful in daily operations, not just in notebooks. My workflow emphasizes measurable quality, latency-awareness, and maintainable deployment.
+    </p>
+  </section>
 
-I am Alvinus, an AI Engineer focused on building AI products that are practical, scalable, and reliable in production. I design end-to-end systems from data pipelines and model experimentation to API deployment, monitoring, and continuous improvement.
+  <section class="portfolio-section">
+    <h2>Data Science Interests</h2>
+    <div class="portfolio-grid portfolio-grid--three">
+      <article class="portfolio-card">
+        <h3>LLM and RAG Systems</h3>
+        <p>Knowledge assistants, document Q and A, and retrieval pipelines for enterprise context.</p>
+      </article>
+      <article class="portfolio-card">
+        <h3>Applied NLP and Vision</h3>
+        <p>OCR, object detection, and text pipelines designed for practical business workflows.</p>
+      </article>
+      <article class="portfolio-card">
+        <h3>MLOps and Evaluation</h3>
+        <p>Experiment tracking, inference APIs, quality evaluation, and continuous iteration loops.</p>
+      </article>
+    </div>
+  </section>
 
-I currently work on LLM applications, retrieval-augmented generation (RAG), and agentic workflows to automate analysis, support decisions, and accelerate business operations.
+  <section class="portfolio-section">
+    <h2>Machine Learning Specialist</h2>
+    <div class="portfolio-grid portfolio-grid--two">
+      <article class="portfolio-card">
+        <h3>What I Deliver</h3>
+        <ul>
+          <li>Model development for NLP, LLM, and computer vision use cases</li>
+          <li>Scalable inference services with FastAPI and Streamlit interfaces</li>
+          <li>Performance optimization across quality, latency, and cost</li>
+        </ul>
+      </article>
+      <article class="portfolio-card">
+        <h3>How I Work</h3>
+        <ul>
+          <li>Define measurable targets before model iteration starts</li>
+          <li>Build reproducible pipelines for training, testing, and deployment</li>
+          <li>Monitor outputs and improve reliability with structured feedback loops</li>
+        </ul>
+      </article>
+    </div>
+  </section>
 
-## Data Science Interests
+  <section class="portfolio-section">
+    <h2>Selected Projects</h2>
+    <div class="portfolio-grid portfolio-grid--three">
+      <article class="portfolio-card portfolio-card--link">
+        <h3>Sentiment Analysis Open Source</h3>
+        <p>Contributor for Senovtik Seminar, focused on Indonesian social media sentiment workflows.</p>
+        <a href="https://sinovik.menpan.go.id/">View Project</a>
+      </article>
+      <article class="portfolio-card portfolio-card--link">
+        <h3>Research Reproduction</h3>
+        <p>Reimplemented and validated fake-news detection research with reproducible reporting.</p>
+        <a href="https://ejurnal.umri.ac.id/index.php/JIK/article/view/6175">View Publication</a>
+      </article>
+      <article class="portfolio-card portfolio-card--link">
+        <h3>License Plate AI Pipeline</h3>
+        <p>Built a YOLOv8 plus EasyOCR pipeline with Streamlit for real-time recognition workflows.</p>
+        <a href="/portfolio/">View Portfolio</a>
+      </article>
+    </div>
+  </section>
 
-- LLM and agentic AI systems for real-world business workflows
-- RAG architecture for enterprise knowledge search, Q&A, and summarization
-- NLP and computer vision applications, including OCR and detection pipelines
-- MLOps practices: model serving, evaluation, observability, and iteration loops
-- Applied analytics that turn model outputs into actionable decisions
+  <section class="portfolio-section portfolio-section--accent">
+    <h2>Tech Stack</h2>
+    <div class="portfolio-tags">
+      <span>Python</span><span>SQL</span><span>PyTorch</span><span>scikit-learn</span><span>LangChain</span><span>LlamaIndex</span><span>FastAPI</span><span>Streamlit</span><span>Docker</span><span>GitHub</span><span>Vector DB</span><span>Prompt Engineering</span>
+    </div>
+  </section>
 
-## Core Stack
-
-- Python, SQL, Pandas, scikit-learn, PyTorch
-- LangChain / LlamaIndex, vector databases, prompt engineering
-- FastAPI, Streamlit, Docker, GitHub
-- Experiment tracking and model evaluation workflows
-
-## Machine Learning Specialist
-
-I specialize in translating machine learning research into production-grade AI systems with clear performance and business impact.
-
-- Build and optimize NLP, LLM, and computer vision models for applied use cases
-- Develop robust inference pipelines and AI APIs for deployment
-- Improve reliability through evaluation frameworks, testing, and monitoring
-- Balance model quality, latency, and cost for production environments
-
-## Selected Experience
-
-### Open Source and Research
-
-I contributed to [Senovtik Seminar](https://sinovik.menpan.go.id/), an open-source sentiment analysis project for Indonesian social media discourse.
-
-I also authored a [related paper](https://drive.google.com/file/d/1dFgNc9gLEWAO9QVBDz26B3bQ3H89vXPQ/view?usp=sharing) presented at the National Seminar on Information & Communication Technology Innovation (SENOVTIK) 2023.
-
-### Applied AI Projects
-
-- Reimplemented and reproduced a fake-news detection study from Universitas Muhammadiyah Riau and documented the findings in a [portfolio publication](https://ejurnal.umri.ac.id/index.php/JIK/article/view/6175).
-- Built a license-plate recognition pipeline using YOLOv8, EasyOCR, and Streamlit for real-time use cases.
-- Delivered freelance data projects on Upwork, including predictive models, dashboards, and business-focused analysis.
-
-### Professional Background
-
-**IT Support**  
-*Yogyakarta University of Technology, Yogyakarta (2022 - 2023)*  
-- Supported hardware, software, and network operations across departments.
-- Helped deploy, configure, and maintain reliable IT systems.
-
-**Freelance AI / Data Projects**  
-*Upwork, Yogyakarta (2024 - Present)*  
-- Developed tailored AI and analytics solutions for client problems.
-- Translated technical outputs into actionable business recommendations.
-
-## Community and Learning
-
-I share practical machine learning and AI engineering content on my [YouTube channel](https://www.youtube.com/@alvinuscardova9407), with a focus on implementation and reproducible workflows.
+  <section class="portfolio-cta">
+    <h2>Open To AI Engineering Collaborations</h2>
+    <p>If you are building AI features and need an engineer who can ship from prototype to production, let's connect.</p>
+    <div class="portfolio-actions">
+      <a class="btn" href="mailto:alvinuscardova16@gmail.com">Start a Conversation</a>
+      <a class="btn btn--inverse" href="https://www.linkedin.com/in/alvinuscardova">LinkedIn</a>
+      <a class="btn btn--inverse" href="https://www.youtube.com/@alvinuscardova9407">YouTube</a>
+    </div>
+  </section>
+</div>
 
 ---
 
 <script>
 (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="ZNPQ0CgXhiHlbhNsjeUOp";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
 </script>
-
