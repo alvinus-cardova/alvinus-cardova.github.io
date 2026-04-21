@@ -10,7 +10,7 @@ locale: "en-US"
 title: "Alvinus's Homepage"
 title_separator: "-"
 name: &name "Alvinus Cardova"
-description: &description "personal description"
+description: &description "AI Engineer building practical LLM and computer vision systems"
 url: https://alvinus-cardova.github.io
 baseurl: "" 
 repository: "alvinus-cardova/alvinus-cardova.github.io"
@@ -44,7 +44,7 @@ analytics:
 author:
   avatar: "fotoku2.png"
   name: "Alvinus Cardova"
-  bio: "I'm a Data Scientist"
+  bio: "AI Engineer | LLM, RAG, Computer Vision"
   location: "Yogyakarta, Indonesia"
   employer: "Yogyakarta University of Technology"
   email: "alvinuscardova16@gmail.com"
