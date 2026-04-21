@@ -179,6 +179,25 @@ h6 {
   line-height: 1.8;
 }
 
+.page__content p {
+  text-wrap: pretty;
+}
+
+.page__content ul,
+.page__content ol {
+  padding-left: 1.2rem;
+}
+
+.page__content p[style*="text-align: justify"] {
+  text-align: left !important;
+}
+
+.page__content .align-right {
+  max-width: min(44%, 380px);
+  margin-left: 1.4rem;
+  margin-bottom: 1rem;
+}
+
 .page__content h2 {
   border-bottom: none;
   position: relative;
@@ -259,7 +278,26 @@ h6 {
   box-shadow: var(--shadow-soft);
 }
 
+.author__urls li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.45rem;
+  white-space: normal;
+  line-height: 1.45;
+}
+
+.author__urls li i {
+  width: 1rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+  text-align: center;
+}
+
 .author__urls a {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.45rem;
+  width: 100%;
   border-radius: 10px;
   margin-bottom: 0.2rem;
   padding: 0.3rem 0.5rem;
@@ -408,6 +446,14 @@ select {
   .page .page__inner-wrap {
     border-radius: 18px;
     padding: 1rem;
+  }
+
+  .page__content .align-right {
+    float: none;
+    display: block;
+    width: 100% !important;
+    max-width: 100%;
+    margin: 0 auto 1.1rem;
   }
 
   .sidebar > div[itemtype] {

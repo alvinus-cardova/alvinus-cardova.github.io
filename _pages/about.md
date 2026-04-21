@@ -12,7 +12,7 @@ redirect_from:
 
 ## 👨🏻‍💻 About Me
 
-<p style="text-align: justify;"> I am Alvinus, a passionate Data Scientist and final-year graduate student at Yogyakarta University of Technology. With a strong foundation in data analysis and machine learning, I specialize in transforming complex data into actionable insights. My academic journey has equipped me with expertise in statistical analysis, predictive modeling, and data visualization, while my professional experiences have allowed me to apply these skills to real-world challenges. </p>
+I am Alvinus, a passionate Data Scientist and final-year graduate student at Yogyakarta University of Technology. With a strong foundation in data analysis and machine learning, I specialize in transforming complex data into actionable insights. My academic journey has equipped me with expertise in statistical analysis, predictive modeling, and data visualization, while my professional experiences have allowed me to apply these skills to real-world challenges.
 
 ## 📊 Data Science Interests
 
