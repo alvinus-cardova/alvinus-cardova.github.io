@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  cctv-monitoring:
+    build: .
+    container_name: cctv-ppe-monitoring
+    ports:
+      - "8000:8000"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8000
+      - CAMERA_IP=10.3.8.111
+      - CAMERA_USERNAME=admin
+      - CAMERA_PASSWORD=WOWO@2000
+      - DATABASE_URL=sqlite:///./cctv_monitoring.db
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./reports:/app/reports
+      - ./backend/models:/app/backend/models
+    networks:
+      - cctv-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Optional: PostgreSQL database for production
+  # postgres:
+  #   image: postgres:13
+  #   container_name: cctv-postgres
+  #   environment:
+  #     POSTGRES_DB: cctv_db
+  #     POSTGRES_USER: cctv_user
+  #     POSTGRES_PASSWORD: cctv_password
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+  #   networks:
+  #     - cctv-network
+  #   restart: unless-stopped
+
+  # Optional: Redis for caching
+  # redis:
+  #   image: redis:6-alpine
+  #   container_name: cctv-redis
+  #   networks:
+  #     - cctv-network
+  #   restart: unless-stopped
+
+networks:
+  cctv-network:
+    driver: bridge
+
+volumes:
+  # postgres_data:
